@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESO Arts Podcast</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="logo">
+                    <i class="fas fa-palette"></i>
+                    ESO Arts
+                </a>
+                <button class="mobile-menu" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="nav-links">
+                    <a href="#episodes" class="active">Episodes</a>
+                    <a href="#about">About</a>
+                    <a href="merch.html" class="nav-shop">Shop</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content text-center">
+                    <h1>ESO Arts Podcast</h1>
+                    <p class="hero-subtitle">Where Digital Art Meets Storytelling</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Episodes</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50K+</span>
+                            <span class="stat-label">Listeners</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4.9</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="http://localhost:8000/images/hero-podcast.jpg" alt="ESO Arts Podcast Hero Image" class="featured-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-episode">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Latest Episode</h2>
+                    <p>Tune in to our most recent conversation</p>
+                </div>
+                <div class="featured-content">
+                    <div class="episode-card featured">
+                        <div class="episode-image">
+                            <img src="images/featured-episode.jpg" alt="Featured Episode">
+                            <button class="play-button">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="episode-details">
+                            <span class="episode-number">#125</span>
+                            <h3>The Future of Digital Art & AI</h3>
+                            <p class="episode-meta">
+                                <span><i class="far fa-clock"></i> 45 mins</span>
+                                <span><i class="far fa-calendar"></i> June 15, 2023</span>
+                            </p>
+                            <p class="episode-description">
+                                Explore the intersection of artificial intelligence and digital art with our special guest, renowned digital artist Sarah Chen.
+                            </p>
+                            <div class="episode-actions">
+                                <button class="btn-primary">
+                                    <i class="fas fa-play"></i> Play Now
+                                </button>
+                                <button class="btn-secondary">
+                                    <i class="fas fa-plus"></i> Add to Queue
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="episodes-grid">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Recent Episodes</h2>
+                    <p>Catch up on what you've missed</p>
+                </div>
+                <div class="episodes-wrapper">
+                    <div class="episode-filters">
+                        <button class="filter-btn active">All</button>
+                        <button class="filter-btn">Interviews</button>
+                        <button class="filter-btn">Tutorials</button>
+                        <button class="filter-btn">News</button>
+                    </div>
+                    <div class="episodes-list">
+                        <!-- Episode cards will be dynamically loaded -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hosts">
+            <h2>Meet Your Hosts</h2>
+            <div class="host-grid">
+                <div class="host-card">
+                    <img src="images/host1.jpg" alt="Host 1">
+                    <h3>Sarah Chen</h3>
+                    <p class="host-title">Digital Artist & Lead Host</p>
+                    <p class="host-bio">Professional digital artist with 10+ years of experience in concept art and illustration.</p>
+                    <div class="host-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-artstation"></i></a>
+                    </div>
+                </div>
+                <div class="host-card">
+                    <img src="images/host2.jpg" alt="Host 2">
+                    <h3>Mike Rodriguez</h3>
+                    <p class="host-title">Tech Expert & Co-host</p>
+                    <p class="host-bio">Technology enthusiast specializing in digital art tools and emerging creative technologies.</p>
+                    <div class="host-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe-section">
+            <div class="container">
+                <div class="subscribe-content">
+                    <h2>Never Miss an Episode</h2>
+                    <p>Get notified about new episodes and exclusive content</p>
+                    <form class="subscribe-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn-primary">Subscribe</button>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="newsletter" checked>
+                            <label for="newsletter">Receive weekly newsletter</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="shop-cta">
+            <div class="container">
+                <div class="shop-content">
+                    <h2>Show Your Creative Side</h2>
+                    <p>Explore our exclusive collection of digital art merchandise</p>
+                    <a href="merch.html" class="btn-primary">Visit Shop <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="listen-on">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Listen On</h2>
+                    <p>Available on your favorite platforms</p>
+                </div>
+                <div class="platform-grid">
+                    <a href="https://spotify.com" target="_blank" class="platform-link spotify">
+                        <i class="fab fa-spotify"></i>
+                        <span>Spotify</span>
+                    </a>
+                    <a href="https://podcasts.apple.com" target="_blank" class="platform-link apple">
+                        <i class="fab fa-apple"></i>
+                        <span>Apple Podcasts</span>
+                    </a>
+                    <a href="https://podcasts.google.com" target="_blank" class="platform-link google">
+                        <i class="fab fa-google"></i>
+                        <span>Google Podcasts</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ESO Arts Podcast</h4>
+                <p>Exploring the world of digital art and creativity through engaging conversations.</p>
+                <div class="social-links">
+                    <a href="https://instagram.com/esoarts" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/esoarts" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://facebook.com/esoarts" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#episodes">All Episodes</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#support">Support the Show</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Use</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#advertise">Advertise with Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ESO Arts Podcast. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
